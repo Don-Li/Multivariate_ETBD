@@ -1,0 +1,15 @@
+IRT/PRP/IRI: the two-sample Kolmogorov-Smirnov statistic betweent the predicted and observed IRT/PRP/IRI distributions.
+
+IRT/PRP/IRI freq: the frequency composition of the IRT/PRP/IRI distribution. These are represented as a 4-vector (LL, LR, RL, RR). The cost is the sum of the absolute differences between the observed and predicted vectors.
+
+IRT/PRP/IRI prob: the proportional frequency. The cost is the sum of the absolute differences between the observed and predicted vectors.
+
+Freq | left/right rft: The response frequency in 1s bins since a left/right reinforcer up to 30s after a reinforcer. This is a 30-length vector. The cost is the sum of the absolute differences between the observed and predicted vectors.
+
+Prob | left/right rft: Same as the "Freq | left/right rft".
+
+Freq | IRI: The response frequency as a function of successive reinforcers. This is a 10-length vector. The cost is the sum of the absolute differences between the observed and predicted vectors.
+
+Prob | IRI: Same as "Freq | IRI".
+
+Each of these variables were subset by the component. For example, we would have 7 Kolmogorov-Smirnov statistics for the IRT distribution.
